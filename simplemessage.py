@@ -9,11 +9,6 @@ load_dotenv()
 
 model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.1)
 
-#messages = [
-#    SystemMessage(content="Translate following word in Turkish."),
-#    HumanMessage(content="Sheep")
-#]
-
 system_prompt = "Translate following into {language}"
 prompt_template = ChatPromptTemplate.from_messages(
     [
